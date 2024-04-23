@@ -1,0 +1,158 @@
+/* Base Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #aa8080; /* Light gray background */
+}
+
+/* Navigation Menu */
+nav {
+    position: absolute; /* Position menu on top of the hero image */
+    top: 0; /* Align to the top */
+    width: 100%; /* Full width */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white */
+    z-index: 100; /* Keep the menu on top */
+    padding: 2rem; /* Add padding for spacing */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flex layout */
+    justify-content: space-around; /* Even spacing between items */
+}
+
+nav a {
+    text-decoration: none; /* No underline */
+    color: #555; /* Dark gray text */
+    transition: color 0.3s; /* Smooth hover effect */
+}
+
+nav a:hover {
+    color: blue; /* Change to blue on hover */
+}
+
+/* Hero Banner */
+section.bg-cover {
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the background image */
+    height: 1000px; /* Increased height */
+}
+
+section.bg-cover h1 {
+    font-size: 3rem; /* Large font */
+    font-weight: bold; /* Bold text for emphasis */
+    color: white; /* White text for contrast */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for visibility */
+}
+
+/* Product Grid */
+.grid {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(2, 1fr); /* Two-column layout */
+    gap: 3rem; /* Spacing between grid items */
+}
+
+.grid div {
+    background-color: white; /* White background for cards */
+    padding: 3rem; /* Padding for larger cards */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover transitions */
+}
+
+.grid div:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.grid img {
+    width: 50%; /* Ensure image fills the width of the card */
+    height: 50%; /* Consistent height for all images */
+    object-fit: cover; /* Maintain aspect ratio, crop excess */
+    border-radius: 0.5rem; /* Rounded corners */
+    position: center;
+}
+
+.grid h3 {
+    font-size: 3rem; /* Font size for product names */
+}
+
+.grid p {
+    font-size: 3rem; /* Font size for product descriptions */
+    color: #666; /* Light gray text */
+}
+
+
+/* Buttons */
+button {
+    background-color: blue; /* Default color */
+    color: white; /* White text */
+    padding: 10px 20px; /* Button padding */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+button:hover {
+    background-color: darkblue; /* Change to darker blue on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* Footer Styling */
+footer {
+    background-color: rgb(187, 140, 140); /* Consistent white background */
+    color: black; /* Black text */
+    text-align: center; /* Centered content */
+    padding: 1.5rem; /* Consistent padding */
+    font-size:2rem; /* Slightly smaller font for the footer */
+}
+
+footer a {
+    color: blue; /* Blue text for links */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition on hover */
+}
+
+footer a:hover {
+    color: darkblue; /* Darker blue on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) { /* For tablets and smaller */
+    .grid {
+        grid-template-columns: 1fr; /* Single-column layout */
+    }
+
+    .grid div {
+        padding: 1.5rem; /* Adjusted padding */
+        height: auto; /* Auto height for flexibility */
+    }
+
+    section.bg-cover {
+        height: 50vh; /* Reduced height for smaller screens */
+    }
+
+    section.bg-cover h1 {
+        font-size: 2.5rem; /* Smaller font for smaller screens */
+    }
+}
+
+@media (max-width: 480px) { /* For mobile screens */
+    section.p-8 {
+        padding: 1rem; /* Reduced padding for smaller screens */
+    }
+
+    .grid img {
+        height: 150px; /* Smaller image height for smaller screens */
+    }
+
+    section.bg-cover {
+        height: 40vh; /* Further reduced height */
+    }
+
+    section.bg-cover h1 {
+        font-size: 2rem; /* Smaller font for smaller screens */
+    }
+}

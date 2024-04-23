@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Details - Clothing Boutique</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+    <body class="font-roboto bg-gray-100">
+        <!-- Navigation Menu -->
+        <nav class="bg-white shadow-lg p-4">
+            <ul class="flex justify-around">
+                <li><a href="index.html" class="text-gray-700 hover:text-blue-500 transition">Home</a></li>
+                <li><a href="product.html" class="text-gray-700 hover:text-blue-500 transition">Products</a></li>
+                <li><a href="contact.html" class="text-gray-700 hover:text-blue-500 transition">Contact</a></li>
+            </ul>
+        </nav>
+    
+    <!-- Hero Banner -->
+    <section class="bg-cover bg-center" style="height: 800px; background-image: url('assets/product.jpg');">
+        <div class="flex justify-center items-center h-full bg-black bg-opacity-50 text-white">
+            <h1 class="text-3xl"></h1>
+        </div>
+    </section>
+
+    <!-- Product Details Section -->
+    <section class="p-8">
+        <center>
+        <h2 class="text-2xl mb-6 text-center">Our Products</h2>
+    </center>
+        <div class="grid grid-cols-2 gap-6"> <!-- Updated to Grid Layout -->
+            <!-- Product 1 -->
+            <div class="bg-white shadow-lg p-6 flex flex-col items-center"> <!-- Vertical Layout -->
+                <img src='assets/Stylish jacket.jpg'
+                     alt="Stylish Jacket" class="w-2/3 h-48 object-cover rounded-md"> <!-- Smaller Image Width -->
+                <div class="mt-4"> <!-- Margin-Top for Spacing -->
+                    <h3 class="text-xl">Stylish Jacket</h3>
+                    <p class="text-gray-700">High-quality jacket for any season. Comes in various sizes and colors.</p>
+                    <p class="text-gray-500">$79.99</p>
+                    <button class="bg-blue-500 text-white px-4 py-2 mt-2 rounded hover:bg-blue-700 transition">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="bg-white shadow-lg p-6 flex flex-col items-center"> <!-- Vertical Layout -->
+                <img src="assets/Casual Tshirt.jpg" 
+                     alt="Casual T-shirt" class="w-2/3 h-48 object-cover rounded-md"> <!-- Smaller Image Width -->
+                <div class="mt-4">
+                    <h3 class="text-xl">Casual T-shirt</h3>
+                    <p class="text-gray-700">100% cotton T-shirt. Available in various colors and sizes.</p>
+                    <p class="text-gray-500">$29.99</p>
+                    <button class="bg-blue-500 text-white px-4 py-2 mt-2 rounded hover:bg-blue-700 transition">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- Product Details Section -->
+  <section class="p-8">
+    <h2 class="text-2xl mb-6 text-center">Our Products</h2>
+    <div class="grid grid-cols-2 gap-6"> <!-- Updated to Grid Layout -->
+        <!-- Product 1 -->
+        <div class="bg-white shadow-lg p-6 flex flex-col items-center"> <!-- Vertical Layout -->
+            <img src="assets/Hoodie.avif"
+                 alt="Hoodie" class="w-2/3 h-48 object-cover rounded-md"> <!-- Smaller Image Width -->
+            <div class="mt-4"> <!-- Margin-Top for Spacing -->
+                <h3 class="text-xl">Hoodie</h3>
+                <p class="text-gray-700">High-quality hoodie for Winter. Comes in various sizes and colors.</p>
+                <p class="text-gray-500">$79.99</p>
+                <button class="bg-blue-500 text-white px-4 py-2 mt-2 rounded hover:bg-blue-700 transition">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="bg-white shadow-lg p-6 flex flex-col items-center"> <!-- Vertical Layout -->
+            <img src="assets/Elegant dress.jpg" 
+                 alt="Casual T-shirt" class="w-2/3 h-48 object-cover rounded-md"> <!-- Smaller Image Width -->
+            <div class="mt-4">
+                <h3 class="text-xl">dress</h3>
+                <p class="text-gray-700">Nice Material. Available in various colors and sizes.</p>
+                <p class="text-gray-500">$29.99</p>
+                <button class="bg-blue-500 text-white px-4 py-2 mt-2 rounded hover:bg-blue-700 transition">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Footer Section -->
+    <Center>
+    <footer class="bg-white text-black text-center p-6">
+        <div class="flex flex-col gap-4">
+            <!-- Company Info -->
+            <div>
+                <p>Clothing Boutique</p>
+                <p>123 Fashion St, City, Country</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Email: contact@clothingboutique.com</p>
+            </div>
+    
+            <!-- Quick Links -->
+            <div>
+                <a href="about.html" class="text-blue-500 transition hover:text-blue-700">About Us</a> |
+                <a href="privacy.html" class="text-blue-500 transition hover:text-blue-700">Privacy Policy</a> |
+                <a href="terms.html" class="text-blue-500 transition hover:text-blue-700">Terms of Service</a>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div>
+                <p>Follow us on:</p>
+                <a href="https://facebook.com" class="text-blue-500 transition hover:text-blue-700">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>, 
+                <a href="https://instagram.com" class="text-blue-500 transition hover:text-blue-700">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>, 
+                <a href="https://twitter.com" class="text-blue-500 transition hover:text-blue-700">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+            </div>
+    
+            <!-- Copyright Notice -->
+            <div>
+                <p>© 2024 Clothing Boutique. All rights reserved.</p>
+            </div>
+        </Center>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>

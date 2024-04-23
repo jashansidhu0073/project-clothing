@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clothing Boutique</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-roboto bg-gray-100">
+    <!-- Navigation Menu -->
+    <nav class="bg-white shadow-lg p-4">
+        <ul class="flex justify-around">
+            <li><a href="index.html" class="text-gray-700 hover:text-blue-500 transition">Home</a></li>
+            <li><a href="product.html" class="text-gray-700 hover:text-blue-500 transition">Products</a></li>
+            <li><a href="contact.html" class="text-gray-700 hover:text-blue-500 transition">Contact</a></li>
+        </ul>
+    </nav>
+ <!-- Hero Banner with Centered Text -->
+<section class="bg-cover bg-center" style="height: 700px; background-image: url('assets/clothes.jpg');">
+    <div class="flex justify-center items-center h-full bg-black bg-opacity-50 text-white text-center"> <!-- Centered text -->
+        <div>
+            <h1 class="text-3xl font-bold">Welcome to Shine Boutique</h1> <!-- Heading -->
+            <p class="text-xl mt-2">Your one-stop shop for stylish and trendy clothing.</p> <!-- Subheading -->
+        </div>
+    </div>
+</section>
+
+
+    <!-- Featured Products -->
+    <section class="p-8">
+        <h2 class="text-2xl mb-4">Featured Products</h2>
+        <div class="grid grid-cols-2 gap-4">
+            <!-- Product 1 -->
+            <div class="bg-white p-6 shadow-lg hover:shadow-2xl transition">
+                <img src="assets/Stylish jacket.jpg" 
+                     alt="Stylish Jacket" class="w-full h-48 object-cover rounded-md">
+                <center><h3 class="text-xl mt-2">Stylish Jacket</h3>
+                <p class="text-gray-500">$79.99</p>
+                <a href="product.html" class="bg-blue-500 text-white px-4 py-2 mt-2 rounded hover:bg-blue-700 transition">View Details</a>
+            </center>
+            </div>
+            <!-- Product 2 -->
+            <div class="bg-white p-6 shadow-lg hover:shadow-2xl transition">
+                <img src="assets/Casual Tshirt.jpg" 
+                     alt="Casual T-shirt" class="w-full h-48 object-cover rounded-md">
+                     <center>
+                <h3 class="text-xl mt-2">Casual T-shirt</h3>
+                <p class="text-gray-500">$29.99</p>
+                <a href="product.html" class="bg-blue-500 text-white px-4 py-2 mt-2 rounded hover:bg-blue-700 transition">View Details</a>
+            </center>
+            </div>
+        </div>
+    </section>
+    
+    <center>
+    <!-- Embedded YouTube Video -->
+    <section class="p-8">
+        <h2 class="text-2xl mb-4">Check Out Our Video</h2>
+        <div class="flex justify-center">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/gbLmku5QACM" 
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+</center>
+
+    <!-- Accordion Section -->
+    <section class="p-8">
+        <h2 class="text-2xl mb-4">Frequently Asked Questions</h2>
+        <div id="accordion" class="flex flex-col gap-4">
+            <!-- Accordion 1 -->
+            <div>
+                <button class="bg-white text-gray-700 hover:text-blue-500 p-4 w-full text-left" onclick="toggleAccordion('accordion1')">
+                    What is your return policy?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="accordion1" class="hidden p-4 text-gray-600">Returns are accepted within 30 days of purchase with a valid receipt.</div>
+            </div>
+            <!-- Accordion 2 -->
+            <div>
+                <button class="bg-white text-gray-700 hover:text-blue-500 p-4 w-full text-left" onclick="toggleAccordion('accordion2')">
+                    What are your store hours?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="accordion2" class="hidden p-4 text-gray-600">Our store is open from 9 AM to 9 PM, Monday through Saturday.</div>
+            </div>
+            <!-- Accordion 3 -->
+            <div>
+                <button class="bg-white text-gray-700 hover:text-blue-500 p-4 w-full text-left" onclick="toggleAccordion('accordion3')">
+                    Do you offer international shipping?
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div id="accordion3" class="hidden p-4 text-gray-600">Yes, we offer international shipping to select countries.</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <center>
+    <footer class="bg-white text-black text-center p-6">
+        <div class="flex flex-col gap-4">
+            <!-- Company Info -->
+            <div>
+                <p>Clothing Boutique</p>
+                <p>123 Fashion St, City, Country</p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Email: contact@clothingboutique.com</p>
+            </div>
+    
+            <!-- Quick Links -->
+            <div>
+                <a href="about.html" class="text-blue-500 transition hover:text-blue-700">About Us</a> |
+                <a href="privacy.html" class="text-blue-500 transition hover:text-blue-700">Privacy Policy</a> |
+                <a href="terms.html" class="text-blue-500 transition hover:text-blue-700">Terms of Service</a>
+            </div>
+    
+            <!-- Social Media Links -->
+            <div>
+                <p>Follow us on:</p>
+                <a href="https://facebook.com" class="text-blue-500 transition hover:text-blue-700">
+                    <i class="fab fa-facebook"></i> Facebook
+                </a>, 
+                <a href="https://instagram.com" class="text-blue-500 transition hover:text-blue-700">
+                    <i class="fab fa-instagram"></i> Instagram
+                </a>, 
+                <a href="https://twitter.com" class="text-blue-500 transition hover:text-blue-700">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+            </div>
+    
+            <!-- Copyright Notice -->
+            <div>
+                <p>© 2024 Clothing Boutique. All rights reserved.</p>
+            </div>
+        </center>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Interactive Elements -->
+    <script src="script.js"></script>
+</body>
